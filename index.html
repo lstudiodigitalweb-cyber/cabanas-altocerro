@@ -3,71 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cabañas Alto Cerro - Salta</title>
-<meta name="description" content="Cabañas Alto Cerro en Salta. Alojamiento con vista a la montaña, entorno natural y reservas directas.">
+<title>Cabañas Alto Cerro</title>
+
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f3ef;
-    color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: url('imagenes/foto1.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("cabaña.png");
+    background-size: cover;
+    background-position: center;
     height: 90vh;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
-    position: relative;
 }
 
-header::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.5);
+header h1 {
+    font-size: 3rem;
+    margin: 0;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 1;
-}
-
-h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-button {
-    padding: 12px 25px;
-    background-color: #556b2f;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+header p {
+    font-size: 1.2rem;
 }
 
 section {
     padding: 50px 20px;
-    max-width: 1000px;
-    margin: auto;
+    text-align: center;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
+.servicios {
+    background-color: white;
+}
+
+.contacto {
+    background-color: #2e4d34;
+    color: white;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3e8e41;
 }
 
 footer {
-    background: #333;
+    background-color: #222;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 </style>
 </head>
@@ -75,46 +74,30 @@ footer {
 <body>
 
 <header>
-<div class="hero-content">
-<h1>Cabañas Alto Cerro</h1>
-<p>Tu refugio en la montaña - Salta</p>
-<button onclick="window.location.href='tel:03872107330'">Llamar Ahora</button>
-</div>
+    <div>
+        <h1>Cabañas Alto Cerro</h1>
+        <p>Descanso, naturaleza y tranquilidad en Salta</p>
+        <button onclick="window.location.href='#contacto'">Reservar ahora</button>
+    </div>
 </header>
 
-<section>
-<h2>Sobre Nosotros</h2>
-<p>Ubicadas en J. A. Fernández 4400, Salta, nuestras cabañas ofrecen tranquilidad, naturaleza y vistas panorámicas. Ideal para parejas y familias que buscan descanso en un entorno único.</p>
+<section class="servicios">
+    <h2>Nuestros Servicios</h2>
+    <p>✔ Cabañas totalmente equipadas</p>
+    <p>✔ Vista panorámica a los cerros</p>
+    <p>✔ WiFi</p>
+    <p>✔ Estacionamiento privado</p>
 </section>
 
-<section>
-<h2>Nuestras Cabañas</h2>
-
-<div class="card">
-<h3>Cabaña Estándar</h3>
-<p>Ideal para 2 personas. WiFi, cocina equipada y parrilla.</p>
-</div>
-
-<div class="card">
-<h3>Cabaña Familiar</h3>
-<p>Hasta 4 personas. Amplios espacios y estacionamiento privado.</p>
-</div>
-
-<div class="card">
-<h3>Cabaña Premium</h3>
-<p>Vista panorámica, mayor privacidad y confort.</p>
-</div>
-
-</section>
-
-<section>
-<h2>Contacto</h2>
-<p>📍 J. A. Fernández 4400, Salta</p>
-<p>📞 0387 210-7330</p>
+<section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Salta, Argentina</p>
+    <p>📞 0387 000-0000</p>
+    <p>📧 info@cabanasalto.com</p>
 </section>
 
 <footer>
-<p>© 2026 Cabañas Alto Cerro - Todos los derechos reservados</p>
+    © 2026 Cabañas Alto Cerro - Todos los derechos reservados
 </footer>
 
 </body>
